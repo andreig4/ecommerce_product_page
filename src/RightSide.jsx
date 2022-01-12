@@ -26,7 +26,7 @@ function RightSide() {
   };
 
   const addToCart = () => {
-    dispatch(addItem(itemsToAddSelector));
+    dispatch(addItem());
   };
 
   return (

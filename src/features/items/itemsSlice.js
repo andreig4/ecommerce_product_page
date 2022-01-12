@@ -8,8 +8,8 @@ export const itemsSlice = createSlice({
   },
 
   reducers: {
-    addItem: (state, action) => {
-      state.totalItems += action.payload;
+    addItem: (state) => {
+      state.totalItems += state.itemsToAdd;
     },
     deleteItems: (state) => {
       state.totalItems = 0;
